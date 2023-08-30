@@ -33,9 +33,6 @@
 }
 
 .page-body {
-    min-width: 1440px;
-    margin: 0;
-    padding: 0;
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -45,14 +42,9 @@
     min-height: 100%;
 }
 
-.page {
-    height: 100%;
-}
-
 .container {
     max-width: 1256px;
     margin: 0 auto;
-    padding: 0;
 }
 
 a {
@@ -108,11 +100,11 @@ h1 {
     padding: 0 20px;
 }
 
-.categories h3{  
+.categories h3 {
     line-height: 24px;
 }
 
-.categories h3 span{
+.categories h3 span {
     font-size: 52px;
 }
 
@@ -178,8 +170,8 @@ li.car-icon {
     background: url(../img/icons/car.svg);
 }
 
-.gistogram{
-    padding: 0 20px;    
+.gistogram {
+    padding: 0 20px;
     margin-bottom: 176px;
 }
 
@@ -200,7 +192,7 @@ li.car-icon {
 }
 
 .gistogram-text-span span {
-    font-family: Roboto;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin-left: 8px;
@@ -210,7 +202,7 @@ li.car-icon {
     max-width: 100%;
 }
 
-.structure{
+.structure {
     padding: 0 20px;
 }
 
@@ -239,7 +231,7 @@ li.car-icon {
 }
 
 .structure-list li p:last-of-type {
-    font-family: Roboto;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 .dark-background {
@@ -249,13 +241,14 @@ li.car-icon {
 }
 
 .sectors h3 {
-    margin: 0 0 72px;    
+    margin: 0 0 72px;
     padding: 0 20px;
 }
 
 .sector-box {
     margin-bottom: 118px;
 }
+
 .sector-box:last-child {
     margin-bottom: 150px;
 }
@@ -273,7 +266,7 @@ li.car-icon {
     border-radius: 20px;
 }
 
-.sector-item:first-child{
+.sector-item:first-child {
     padding: 28px 67px;
 }
 
@@ -281,11 +274,11 @@ li.car-icon {
     background-color: var(--basic-black);
 }
 
-.sector-item.dark-sector:first-child{
+.sector-item.dark-sector:first-child {
     padding: 28px 81px;
 }
 
-.sector-item.dark-sector:last-child{
+.sector-item.dark-sector:last-child {
     padding: 28px 110px 28px 36px;
 }
 
@@ -296,7 +289,7 @@ li.car-icon {
 }
 
 .sector-item p:last-of-type {
-    font-family: Roboto;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
 }
 
@@ -311,19 +304,19 @@ li.car-icon {
 .main-footer {
     max-width: 1024px;
     margin: 0 auto;
-    font-family: Roboto;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 22px;
     padding-bottom: 44px;
 }
 
-.main-footer h2 {    
+.main-footer h2 {
     font-size: 58px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 44px;
 }
 
-.contacts-list{
+.contacts-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -331,26 +324,42 @@ li.car-icon {
     text-align: center;
 }
 
-.contacts-country,.contacts-email{
-font-weight: 700;
+.contacts-country,
+.contacts-email {
+    font-weight: 700;
 }
 
 .contacts-phone {
     color: inherit;
-  }
-
-
-
-/*/Media/*/
-@media (max-width: 1200px) {
-    
-   
-
-
-
 }
 
 
 
+/*/Media
+@media (max-width: 990px) {
+
+    h1{
+        font-size: 70px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+.text-about{
+    font-size: 16px;
+}
+    .categories h3 span {
+        font-size: 48px;
+    }
+
+    .gistogram-text-span {
+        top: -12px;
+        left: 505px;
+    }
+
+    .sector-row {
+        flex-wrap: wrap;
+    }
 
 
+}/*/
