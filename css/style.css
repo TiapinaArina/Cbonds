@@ -24,7 +24,7 @@
     --basic-green: #5CB585;
 }
 
-/* Global */
+/*/ Global /*/
 
 * {
     margin: 0;
@@ -299,9 +299,6 @@ li.car-icon {
     max-width: 100%;
 }
 
-
-
-
 .main-footer {
     max-width: 1024px;
     margin: 0 auto;
@@ -474,9 +471,11 @@ li.car-icon {
         align-items: center;
         text-align: center;
     }
-.sector-row{
-    margin: 0 50px 64px;
-}
+
+    .sector-row {
+        margin: 0 50px 64px;
+    }
+
     .sector-item p:first-of-type {
         font-size: 40px;
     }
@@ -518,6 +517,10 @@ li.car-icon {
         font-size: 40px;
     }
 
+    .gistogram {
+        margin-bottom: 100px;
+    }
+
     .gistogram-text-span span {
         font-size: 14px;
     }
@@ -533,7 +536,6 @@ li.car-icon {
     .sector-item:first-child {
         padding: 28px 36px;
     }
-
 
     .sector-item p:first-of-type {
         font-size: 35px;
@@ -551,7 +553,8 @@ li.car-icon {
 
 @media (max-width:385px) {
 
-    .sector-item.dark-sector:first-child,.sector-item.dark-sector:last-child{
+    .sector-item.dark-sector:first-child,
+    .sector-item.dark-sector:last-child {
         padding: 28px 36px;
     }
 }
