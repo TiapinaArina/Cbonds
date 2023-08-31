@@ -189,6 +189,7 @@ li.car-icon {
     background-color: var(--basic-blue);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .gistogram-text-span span {
@@ -214,7 +215,6 @@ li.car-icon {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 16px 0;
     margin-bottom: 96px;
 }
 
@@ -257,6 +257,7 @@ li.car-icon {
     display: flex;
     justify-content: space-evenly;
     margin: 0 70px 64px;
+    gap: 20px
 }
 
 .sector-item {
@@ -279,7 +280,7 @@ li.car-icon {
 }
 
 .sector-item.dark-sector:last-child {
-    padding: 28px 110px 28px 36px;
+    padding: 28px 100px 28px 36px;
 }
 
 .sector-item p:first-of-type {
@@ -306,6 +307,7 @@ li.car-icon {
     margin: 0 auto;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 22px;
+    padding: 0 20px;
     padding-bottom: 44px;
 }
 
@@ -320,6 +322,7 @@ li.car-icon {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 58px;
     text-align: center;
 }
@@ -335,19 +338,21 @@ li.car-icon {
 
 
 
-/*/Media
-@media (max-width: 990px) {
+/*/Media/*/
+@media (max-width: 940px) {
 
-    h1{
+    h1 {
         font-size: 70px;
+    }
+
+    .text-about {
+        font-size: 16px;
     }
 
     h3 {
         font-size: 32px;
     }
-.text-about{
-    font-size: 16px;
-}
+
     .categories h3 span {
         font-size: 48px;
     }
@@ -357,9 +362,207 @@ li.car-icon {
         left: 505px;
     }
 
+    .gistogram-text-span span {
+        font-size: 14px;
+    }
+
+    .sectors h3 {
+        text-align: center;
+    }
+
     .sector-row {
         flex-wrap: wrap;
     }
 
+    .sector-item:first-child {
+        padding: 28px 36px;
+    }
 
-}/*/
+    .sector-item.dark-sector:first-child {
+        padding: 28px 120px 28px 36px;
+    }
+
+    .sector-item p:first-of-type {
+        font-size: 45px;
+    }
+
+    .main-footer {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .text-about {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .categories {
+        margin-bottom: 100px;
+    }
+
+    .categories h3 span {
+        font-size: 44px;
+    }
+
+    .gistogram {
+        margin-bottom: 130px;
+    }
+
+    .gistogram-text-span {
+        top: -12px;
+        left: 440px;
+    }
+
+    .gistogram-text-span span {
+        font-size: 14px;
+    }
+
+    .sector-box {
+        margin-bottom: 90px;
+    }
+
+    .sector-box:last-child {
+        margin-bottom: 120px;
+    }
+
+    .sector-item p:first-of-type {
+        font-size: 45px;
+    }
+
+    .main-footer {
+        font-size: 18px;
+    }
+
+    .main-footer h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 690px) {
+    .gistogram h3:last-of-type {
+        margin-top: 40px;
+    }
+
+    .gistogram-text-span {
+        top: 52px;
+        left: 0;
+    }
+
+    .gistogram img {
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    .structure-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+.sector-row{
+    margin: 0 50px 64px;
+}
+    .sector-item p:first-of-type {
+        font-size: 40px;
+    }
+
+    .sector-item p:last-of-type {
+        font-size: 14px;
+    }
+
+    .main-footer h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:460px) {
+
+    .sector-item.dark-sector:first-child {
+        padding: 28px 70px 28px 36px;
+    }
+
+    .sector-item.dark-sector:last-child {
+        padding: 28px 50px 28px 36px;
+    }
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .text-about {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .categories h3 span {
+        font-size: 40px;
+    }
+
+    .gistogram-text-span {
+        top: px;
+        left: px;
+    }
+
+    .gistogram-text-span span {
+        font-size: 14px;
+    }
+
+    .structure-list li p:first-of-type {
+        font-size: 30px;
+    }
+
+    .sectors h3 {
+        text-align: center;
+    }
+
+    .sector-item:first-child {
+        padding: 28px 36px;
+    }
+
+
+    .sector-item p:first-of-type {
+        font-size: 35px;
+    }
+
+    .main-footer {
+        font-size: 20px;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:385px) {
+
+    .sector-item.dark-sector:first-child,.sector-item.dark-sector:last-child{
+        padding: 28px 36px;
+    }
+}
+
+@media (max-width:375px) {
+    h3 {
+        font-size: 18px;
+    }
+}
